@@ -22,8 +22,9 @@ imblearn
 
 # Deep Learning
 tensorflow
-
+Flask
 # Visualization
 matplotlib
 seaborn
+
 
