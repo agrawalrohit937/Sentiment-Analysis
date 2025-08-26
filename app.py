@@ -29,7 +29,7 @@ ALLOWED_EXT = {"csv", "txt"}
 # ------------------------------
 # Load models
 # ------------------------------
-with open(MODEL_DIR / "voter_model.pkl", "rb") as f:
+with open(MODEL_DIR / "voter_models.pkl", "rb") as f:
     stack_model = pickle.load(f)
 
 with open(MODEL_DIR / "tfidf_vectorizer.pkl", "rb") as f:
