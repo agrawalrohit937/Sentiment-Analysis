@@ -5,7 +5,7 @@ import pickle
 import datetime as dt
 from pathlib import Path
 from typing import List, Dict, Any
-
+import joblib   # add this
 from flask import Flask, render_template, request, jsonify, send_from_directory
 from werkzeug.utils import secure_filename
 import pandas as pd
@@ -30,7 +30,7 @@ ALLOWED_EXT = {"csv", "txt"}
 # Load models
 # ------------------------------
 with open(MODEL_DIR / "voter_models.pkl", "rb") as f:
-    stack_model = pickle.load(f)
+    stack_model = joblib.load(f)
 
 with open(MODEL_DIR / "tfidf_vectorizer.pkl", "rb") as f:
     vectorizer = pickle.load(f)
