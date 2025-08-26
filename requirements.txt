@@ -1,7 +1,28 @@
-Flask
-scikit-learn
+# Core
 numpy
 pandas
-flask
-gunicorn
+scikit-learn
+joblib
+scipy
+
+# NLP
+nltk
+spacy
+emoji
+textblob
+vaderSentiment
+wordcloud
+tqdm
+
+# ML / Ensemble
+xgboost
 lightgbm
+catboost
+imblearn
+
+# Deep Learning
+tensorflow
+
+# Visualization
+matplotlib
+seaborn
