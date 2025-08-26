@@ -1,0 +1,31 @@
+<!-- {% extends "layout.html" %}
+{% block content %}
+<section class="result-box">
+  <h2>Prediction Result</h2>
+  <p><strong>Text:</strong> "{{ text }}"</p>
+  <p><strong>Emotion:</strong> {{ prediction }} {{ emoji }}</p>
+  <a href="/">🔄 Try Again</a>
+</section>
+{% endblock %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emotion Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container text-center mt-5">
+    <h1 class="title">Your Emotion Result 🎉</h1>
+    <p class="subtitle">You entered:</p>
+    <div class="card p-3 user-text">{{ user_text }}</div>
+
+    <h2 class="emotion">Predicted Emotion: 
+      <span class="highlight">{{ emotion }}</span>
+    </h2>
+
+    <a href="/" class="btn btn-lg btn-gradient mt-3">Try Again 🔄</a>
+  </div>
+</body>
+</html>
