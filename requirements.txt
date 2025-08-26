@@ -13,7 +13,7 @@ textblob
 vaderSentiment
 wordcloud
 tqdm
-
+gunicorn
 # ML / Ensemble
 xgboost
 lightgbm
@@ -26,3 +26,4 @@ tensorflow
 # Visualization
 matplotlib
 seaborn
+
